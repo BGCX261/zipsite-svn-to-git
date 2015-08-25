@@ -1,0 +1,10 @@
+queue:
+- name: DeleteDBCache
+  rate: 1/s
+  bucket_size: 10
+  
+- name: CreateSitemap
+  rate: 5/m
+  bucket_size: 1
+  
+  

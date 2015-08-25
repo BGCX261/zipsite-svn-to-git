@@ -1,0 +1,13 @@
+很多朋友向我询问过如何访问appspot中网站。
+
+介绍一个简单有效的方法
+_windows用户：_
+
+使用记事本等文本编辑器打开c:\windows\system32\drivers\etc\hosts文件，注意写保护状态。
+
+添加一行：
+203.208.39.104 	android-sdk.appspot.com #替换成你自己的网站名称
+
+_unix/linux/mac用户:_
+用root用户执行
+#echo "203.208.39.104 	android-sdk.appspot.com" >> /etc/hosts 

@@ -1,0 +1,17 @@
+application: zipsite
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /myadmin/.*|/myadmin
+  script: $PYTHON_LIB/google/appengine/ext/admin
+  login: admin
+
+- url: .*
+  script: zipsite.py
+  secure: never
+
+builtins:
+- datastore_admin: on
+

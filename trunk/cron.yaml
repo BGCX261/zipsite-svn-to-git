@@ -1,0 +1,9 @@
+cron:
+#- description: weekly summary job
+#  url: /cacheflush
+#  schedule: every sunday of month 09:00
+
+- description: Build sitemap.xml
+  url: /sitemap.xml/Create
+  schedule: every 12 hours
+
